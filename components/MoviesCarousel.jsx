@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 
 function MoviesCarousel({ title, movies, isVertical }) {
   return (
-    <div>
-      <div className="z-50">
+    <div className="relative">
+      <div className="z-10">
         <h2 className="text-xl font-bold px-10 py-2">{title}</h2>
         <div
           className={cn(
@@ -23,7 +23,7 @@ function MoviesCarousel({ title, movies, isVertical }) {
                   )}
                 >
                   <MovieCard movie={movie} />
-                  <div className="max-w-2xl">
+                  <div className="max-w-2-x">
                     <p className="font-bold">
                       {movie.title}({movie.release_date?.split("-")[0]})
                     </p>
