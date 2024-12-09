@@ -44,7 +44,7 @@ function GenreDropdown() {
   return (
     <div>
       <DropdownMenu>
-        <DropdownMenuTrigger className="text-white flex justify-center items-center">
+        <DropdownMenuTrigger className="text-white flex justify-center items-center outline-none">
           Genre <ChevronDown className="ml-1" />
         </DropdownMenuTrigger>
         <DropdownMenuContent>

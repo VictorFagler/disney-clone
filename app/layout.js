@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
       <body className="bg-white dark:bg-[#1A1C29]">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Header /> */}
+          <Header />
           {children}
         </ThemeProvider>
       </body>

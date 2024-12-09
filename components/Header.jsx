@@ -19,7 +19,7 @@ function Header() {
         />
       </Link>
 
-      <div className="flex space-x-2">
+      <div className="flex space-x-2 items-center">
         <GenreDropdown />
         <SearchInput />
         <ThemeToggler />
