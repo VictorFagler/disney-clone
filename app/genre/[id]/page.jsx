@@ -1,3 +1,4 @@
+import React from "react";
 import MoviesCarousel from "@/components/MoviesCarousel";
 import { getDiscoverMovies } from "@/lib/getMovies";
 
