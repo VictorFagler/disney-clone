@@ -24,9 +24,6 @@ function SearchInput() {
 
   // Handle form submission
   function onSubmit(values) {
-    // Do something with the form values.
-    // This will be type-safe if you use the right libraries, but we won't define types here
-    console.log(values);
     router.push(`/search/${values.input}`);
     form.reset();
   }

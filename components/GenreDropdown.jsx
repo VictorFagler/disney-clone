@@ -17,7 +17,7 @@ function GenreDropdown() {
   useEffect(() => {
     // Fetch genres when the component mounts
     async function fetchGenres() {
-      const url = "https://api.themoviedb.org/3/genre/movie/list?language=en"; // Corrected 'language'
+      const url = "https://api.themoviedb.org/3/genre/movie/list?language=en"; 
       const options = {
         method: "GET",
         headers: {
@@ -30,16 +30,16 @@ function GenreDropdown() {
       };
 
       try {
-        const response = await fetch(url, options); // Wait for the response
-        const data = await response.json(); // Parse the JSON response
-        setGenres(data.genres || []); // Set genres state
+        const response = await fetch(url, options); 
+        const data = await response.json(); 
+        setGenres(data.genres || []); 
       } catch (error) {
-        console.error("Error fetching genres:", error); // Error handling
+        console.error("Error fetching genres:", error); 
       }
     }
 
-    fetchGenres(); // Call the fetchGenres function when the component mounts
-  }, []); // Empty dependency array means this runs once when the component mounts
+    fetchGenres(); 
+  }, []); 
 
   return (
     <div>

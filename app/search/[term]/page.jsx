@@ -4,16 +4,16 @@ import { getPopularMovies, getSearchedMovies } from "@/lib/getMovies";
 import { notFound } from "next/navigation";
 
 async function SearchPage({ params }) {
-  // Wait for params to resolve properly
   const { term } = await params;
 
-  console.log(term);
+  //404 fallback
   if (!term) notFound();
 
   const termToUse = decodeURI(term);
 
   // API to get the searched movies
   const movies = await getSearchedMovies(termToUse);
+
   //API to get the popular movies
   const popularMovies = await getPopularMovies();
 

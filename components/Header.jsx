@@ -16,7 +16,7 @@ function Header() {
           height={100}
           priority
           className="cursor-pointer invert-0 dark:invert"
-          style={{ width: "auto", height: "auto" }} // Ensure aspect ratio
+          style={{ width: "auto", height: "auto" }} 
         />
       </Link>
 
