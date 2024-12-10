@@ -7,7 +7,7 @@ import getImagePath from "@/lib/getImagePath";
 
 Autoplay.globalOptions = { delay: 8000 };
 
-function CarouselBanner({ movies }) {
+function CarouselBanner({ movies = [] }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 100 }, [
     Autoplay(),
   ]);

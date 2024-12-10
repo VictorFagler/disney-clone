@@ -1,3 +1,4 @@
+import React from "react";
 import CarouselBannerWrapper from "@/components/CarouselBannerWrapper";
 import MoviesCarousel from "@/components/MoviesCarousel";
 import {

@@ -1,3 +1,4 @@
+import React from "react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 import Header from "/components/Header";
