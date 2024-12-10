@@ -12,12 +12,6 @@ function CarouselBanner({ movies = [] }) {
     Autoplay(),
   ]);
 
-  React.useEffect(() => {
-    if (emblaApi) {
-      console.log("Embla API initialized");
-    }
-  }, [emblaApi]);
-
   return (
     <div
       ref={emblaRef}
